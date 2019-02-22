@@ -13,6 +13,11 @@ def hello (request, person):
 def times2 (request, number):
     return HttpResponse("The product times 2 is:" + str(number *2))
 
+def total (request, number):
+    for num in range(0, number+1):
+        sum += num
+        return HttpResponse("The sum of the number is " + sum)
+
 
 
 
