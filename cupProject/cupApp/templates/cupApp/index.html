@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--for loop that pulls from my model and functions-->
+<h1>Carlos Garcia</h1>
+<ul>
+    {% if getAllCups %}
+    {% for eachCup in getAllCups %}
+    <li>{{ eachCup.name }}</li>
+    {% endfor %}
+    {% else %}
+    <p>nothing to see here </p>
+    {% endif %}
+</ul>
+
+<
+
+</body>
+</html>
